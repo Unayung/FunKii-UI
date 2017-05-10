@@ -619,7 +619,7 @@ class RootWindow(tk.Tk):
             keysite = fnku.get_keysite()
             print(u'Downloading/updating data from {0}'.format(keysite))
 
-            if not fnku.download_file('https://{0}/json'.format(keysite), 'titlekeys.json', 3):
+            if not fnku.download_file('http://{0}/json'.format(keysite), 'titlekeys.json', 3):
                 print('ERROR: Could not download data file...\n')
             else:
                 print('DONE....Downloaded titlekeys.json succesfully')
